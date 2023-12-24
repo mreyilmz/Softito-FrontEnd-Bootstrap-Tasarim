@@ -1,0 +1,333 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bs-tertiary-bg-rgb: transparent;
+  --main-color: #3496d8;
+}
+
+#first-section {
+  height: 98vh;
+  background-image: url("assets/images/the-town-bg-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#navbarSupportedContent {
+  font-size: x-large;
+}
+
+#navbarSupportedContent ul a {
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+#navbarSupportedContent ul a:hover {
+  color: var(--main-color);
+}
+
+.navbar-brand {
+  transition: all 0.3s;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.navbar-toggler {
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.landing-text {
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  color: white;
+  text-align: center;
+}
+
+.landing-text > h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.landing-text p {
+  font-size: 20px;
+}
+
+.landing-text > *:not(:first-child) {
+  margin-top: 20px;
+}
+
+.down-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  display: inline-block;
+  width: 88px;
+  height: 88px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.down-button:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.down-button i {
+  color: #c57e7d;
+  position: absolute;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.down-button:hover i {
+  color: white;
+}
+
+/* --------------------------------------- */
+
+#second-section {
+  margin-top: 120px;
+}
+
+.article-div > h3 {
+  font-size: 45px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.article-div > article > p {
+  line-height: 1.4;
+  font-size: 21px;
+  opacity: 0.5;
+}
+
+.read-more-button {
+  font-size: 22px;
+  color: white;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+  padding: 10px 20px;
+}
+
+.read-more-button:hover {
+  background-color: #73c1f6;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------------- */
+
+.about-div {
+  margin-top: 150px;
+}
+
+.about i {
+  color: var(--main-color);
+  font-size: 75px;
+}
+
+.about div > i {
+  margin-bottom: 55px;
+}
+
+.about div > h4 {
+  color: var(--main-color);
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.about div > p {
+  font-size: 18px;
+  color: #8f8f8f;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ------------------------------------------------------ */
+
+#forth-section {
+  margin-top: 100px;
+}
+
+.our-work > h2 {
+  color: var(--main-color);
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.our-work > p {
+  color: #8f8f8f;
+  line-height: 2;
+}
+
+.images-div {
+  margin-top: 50px;
+}
+
+.images > img {
+  width: 220px;
+  height: 330px;
+}
+
+.dot-div {
+  margin-top: 10px;
+}
+
+.our-work-div span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.our-work-div span:not(:first-child) {
+  margin-left: 30px;
+  background-color: black;
+  opacity: 0.25;
+}
+
+.our-work-div span:first-child {
+  background-color: var(--main-color);
+}
+
+.our-work-div span:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  opacity: 1;
+}
+
+/* ----------------------------------------------------------------- */
+
+#footer-section {
+  background-image: url("assets/images/the-town-bg-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: 90px;
+  color: white;
+  position: relative;
+}
+
+.footer-upper-div h2 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.thin-div {
+  border: none;
+  height: 2px;
+  background-color: white;
+}
+
+.thick-div {
+  margin-bottom: 48px;
+  display: inline-block;
+  width: 25%;
+  border: none;
+  height: 8px;
+  background-color: white;
+}
+
+.footer-upper-div p {
+  font-size: 18px;
+  line-height: 2;
+  opacity: 0.9;
+}
+
+.company-info {
+  margin-top: 50px;
+}
+
+.company-info div {
+  transition: all 0.3s;
+}
+
+.company-info i {
+  font-size: 54px;
+}
+
+.company-info span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.company-info > .row > div:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.input {
+  color: white;
+  background-color: transparent;
+  padding: 15px 60px 15px 30px;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline: black;
+}
+
+.input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.submit-button {
+  background-color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #ced4da;
+  cursor: pointer;
+}
+
+.footer-text-div p {
+  font-size: 14px;
+  bottom: 0;
+  text-align: center;
+  margin-top: 100px;
+}
